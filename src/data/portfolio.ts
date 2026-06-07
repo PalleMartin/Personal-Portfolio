@@ -1,0 +1,451 @@
+import {
+  Code2,
+  Brain,
+  Palette,
+  Video,
+  Camera,
+  Layers,
+  Database,
+  Globe,
+  Cpu,
+  Terminal,
+  Server,
+  Sparkles,
+  Film,
+  Zap,
+  Workflow,
+} from 'lucide-react';
+
+export const personalInfo = {
+  name: 'Martin Palle',
+  title: 'Full Stack Developer | AI Engineer | Graphic Designer | Video Editor',
+  tagline: 'Building intelligent software, impactful designs, and engaging digital experiences.',
+  summary: `Computer Science and Engineering professional with expertise in Full Stack Development, Artificial Intelligence, Machine Learning, Graphic Design, Video Editing, Photography, and Digital Media Production.
+
+Experienced in developing scalable web applications, AI-powered solutions, creative visual designs, and professional multimedia content. Passionate about leveraging technology, creativity, and innovation to solve real-world problems and create meaningful digital experiences.`,
+  email: 'pallemahi007@gmail.com',
+  phone: '+91 9533024466',
+  location: 'Vizianagaram, Andhra Pradesh, India',
+  social: {
+    linkedin: 'https://www.linkedin.com/in/palle-martin-85747a372',
+    github: 'https://github.com/PalleMartin',
+    email: 'mailto:pallemahi007@gmail.com',
+    instagram: 'https://www.instagram.com/__sarkaar.__/',
+  },
+};
+
+export const stats = [
+  { label: 'Projects Completed', value: 30, suffix: '+' },
+  { label: 'Technologies', value: 25, suffix: '+' },
+  { label: 'Certifications', value: 4, suffix: '' },
+  { label: 'Design Projects', value: 30, suffix: '+' },
+  { label: 'Videos Produced', value: 50, suffix: '+' },
+];
+
+export const skills = [
+  {
+    category: 'Programming Languages',
+    icon: Code2,
+    items: ['Python', 'JavaScript', 'TypeScript', 'Java', 'C'],
+    color: 'from-blue-500 to-cyan-500',
+  },
+  {
+    category: 'Frontend Development',
+    icon: Globe,
+    items: ['HTML5', 'CSS3', 'JavaScript', 'React.js', 'Next.js', 'Tailwind CSS'],
+    color: 'from-cyan-500 to-teal-500',
+  },
+  {
+    category: 'Backend Development',
+    icon: Server,
+    items: ['Node.js', 'Express.js', 'REST APIs', 'Authentication Systems'],
+    color: 'from-green-500 to-emerald-500',
+  },
+  {
+    category: 'Databases',
+    icon: Database,
+    items: ['MySQL', 'MongoDB', 'Firebase'],
+    color: 'from-orange-500 to-amber-500',
+  },
+  {
+    category: 'AI & Machine Learning',
+    icon: Brain,
+    items: ['Machine Learning', 'Deep Learning', 'Data Analysis', 'Computer Vision', 'NLP', 'AI Automation', 'TensorFlow', 'Scikit-learn'],
+    color: 'from-purple-500 to-pink-500',
+  },
+  {
+    category: 'Tools & Platforms',
+    icon: Terminal,
+    items: ['Git', 'GitHub', 'VS Code', 'Postman', 'Docker'],
+    color: 'from-slate-500 to-gray-500',
+  },
+  {
+    category: 'Graphic Design',
+    icon: Palette,
+    items: ['Adobe Photoshop', 'Adobe Illustrator', 'Canva', 'Figma', 'Branding Design', 'UI/UX Design'],
+    color: 'from-rose-500 to-pink-500',
+  },
+  {
+    category: 'Video Editing & Multimedia',
+    icon: Video,
+    items: ['Adobe Premiere Pro', 'After Effects', 'DaVinci Resolve', 'CapCut', 'Motion Graphics', 'Color Grading', 'Audio Editing', 'Storytelling'],
+    color: 'from-red-500 to-orange-500',
+  },
+];
+
+export const services = [
+  {
+    title: 'Full Stack Development',
+    description: 'Build scalable web applications with modern technologies. From responsive frontends to robust backends, I create complete digital solutions.',
+    icon: Layers,
+    color: 'from-primary-500 to-accent-500',
+    features: ['React/Next.js Apps', 'REST APIs', 'Database Design', 'Authentication'],
+  },
+  {
+    title: 'AI & Machine Learning',
+    description: 'Develop intelligent systems and automation solutions that leverage cutting-edge AI technology to solve complex problems.',
+    icon: Brain,
+    color: 'from-purple-500 to-pink-500',
+    features: ['Predictive Models', 'Data Analysis', 'AI Automation', 'ML Applications'],
+  },
+  {
+    title: 'Graphic Design',
+    description: 'Create visual identities and digital branding experiences that captivate audiences and communicate your message effectively.',
+    icon: Palette,
+    color: 'from-rose-500 to-orange-500',
+    features: ['Brand Identity', 'UI/UX Design', 'Marketing Assets', 'Social Media'],
+  },
+  {
+    title: 'Video Editing',
+    description: 'Produce professional videos, reels, promotional content, and multimedia campaigns that tell compelling stories.',
+    icon: Film,
+    color: 'from-red-500 to-pink-500',
+    features: ['Promotional Videos', 'Motion Graphics', 'Color Grading', 'Short-form Content'],
+  },
+  {
+    title: 'Content Creation',
+    description: 'Photography, videography, and social media content production that builds your brand and engages your audience.',
+    icon: Camera,
+    color: 'from-amber-500 to-orange-500',
+    features: ['Photography', 'Videography', 'Social Content', 'Digital Campaigns'],
+  },
+];
+
+export const experiences = [
+  {
+    title: 'Full Stack Development',
+    period: '2024 - Present',
+    description: 'Developed responsive web applications using modern frontend and backend technologies.',
+    highlights: ['Authentication Systems', 'REST API Development', 'Database Architecture', 'Dashboard Systems', 'Responsive Interfaces'],
+    icon: Layers,
+  },
+  {
+    title: 'AI & Machine Learning',
+    period: '2024 - Present',
+    description: 'Built intelligent solutions leveraging cutting-edge AI and ML technologies.',
+    highlights: ['Predictive Models', 'Data Analysis Systems', 'AI Automation Tools', 'Machine Learning Applications'],
+    icon: Brain,
+  },
+  {
+    title: 'Graphic Design',
+    period: '2020 - Present',
+    description: 'Created compelling visual designs for brands, campaigns, and digital products.',
+    highlights: ['Brand Identity Designs', 'Social Media Creatives', 'Marketing Assets', 'Digital Campaigns'],
+    icon: Palette,
+  },
+  {
+    title: 'Video Editing & Media Production',
+    period: '2020 - Present',
+    description: 'Produced professional video content for various platforms and purposes.',
+    highlights: ['Promotional Videos', 'Event Highlights', 'Reels & Shorts', 'Motion Graphics Projects'],
+    icon: Video,
+  },
+  {
+    title: 'Event Management & Media Activities',
+    period: '2020 - Present',
+    description: 'Coordinated events and managed creative media operations.',
+    highlights: ['Event Management', 'Team Coordination', 'Photography', 'Videography', 'Creative Media Operations'],
+    icon: Workflow,
+  },
+];
+
+export const projects = [
+  {
+    id: 1,
+    title: 'E-Commerce Platform',
+    description: 'A full-stack e-commerce solution with real-time inventory, payment processing, and admin dashboard.',
+    image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
+    category: 'fullstack',
+    technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+    github: 'https://github.com/martinpalle/ecommerce',
+    live: 'https://demo.martinpalle.dev/ecommerce',
+    featured: true,
+  },
+  {
+    id: 2,
+    title: 'AI Image Recognition App',
+    description: 'Machine learning application for real-time image classification and object detection.',
+    image: 'https://images.pexels.com/photos/8438980/pexels-photo-8438980.jpeg?auto=compress&cs=tinysrgb&w=800',
+    category: 'aiml',
+    technologies: ['Python', 'TensorFlow', 'OpenCV', 'FastAPI'],
+    github: 'https://github.com/martinpalle/ai-vision',
+    live: 'https://demo.martinpalle.dev/ai-vision',
+    featured: true,
+  },
+  {
+    id: 3,
+    title: 'Brand Identity Suite',
+    description: 'Complete brand identity design including logo, color palette, typography, and marketing materials.',
+    image: 'https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=800',
+    category: 'design',
+    technologies: ['Illustrator', 'Photoshop', 'Figma'],
+    live: 'https://dribbble.com/martinpalle',
+    featured: true,
+  },
+  {
+    id: 4,
+    title: 'SaaS Dashboard',
+    description: 'Analytics dashboard with real-time data visualization, user management, and reporting features.',
+    image: 'https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&w=800',
+    category: 'fullstack',
+    technologies: ['Next.js', 'TypeScript', 'PostgreSQL', 'Chart.js'],
+    github: 'https://github.com/martinpalle/saas-dashboard',
+    live: 'https://demo.martinpalle.dev/dashboard',
+    featured: true,
+  },
+  {
+    id: 5,
+    title: 'Product Launch Video',
+    description: 'Cinematic promotional video for tech startup product launch with motion graphics and sound design.',
+    image: 'https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=800',
+    category: 'video',
+    technologies: ['Premiere Pro', 'After Effects', 'DaVinci Resolve'],
+    live: 'https://vimeo.com/martinpalle',
+    featured: true,
+  },
+  {
+    id: 6,
+    title: 'NLP Chat Assistant',
+    description: 'Natural language processing chatbot with sentiment analysis and context awareness.',
+    image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800',
+    category: 'aiml',
+    technologies: ['Python', 'NLP', 'Transformers', 'FastAPI'],
+    github: 'https://github.com/martinpalle/nlp-chat',
+    live: 'https://demo.martinpalle.dev/chat',
+    featured: false,
+  },
+  {
+    id: 7,
+    title: 'Social Media Campaign',
+    description: 'Complete social media campaign with 20+ creatives, video content, and strategic content calendar.',
+    image: 'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=800',
+    category: 'design',
+    technologies: ['Photoshop', 'Illustrator', 'After Effects'],
+    live: 'https://behance.net/martinpalle',
+    featured: false,
+  },
+  {
+    id: 8,
+    title: 'Event Highlight Reel',
+    description: 'Dynamic event coverage video with cinematic editing and motion graphics.',
+    image: 'https://images.pexels.com/photos/1540406/pexels-photo-1540406.jpeg?auto=compress&cs=tinysrgb&w=800',
+    category: 'video',
+    technologies: ['Premiere Pro', 'After Effects', 'Color Grading'],
+    live: 'https://vimeo.com/martinpalle',
+    featured: false,
+  },
+  {
+    id: 9,
+    title: 'Task Management App',
+    description: 'Collaborative project management tool with real-time updates and team features.',
+    image: 'https://images.pexels.com/photos/3243/pen-calendar-to-do.jpg?auto=compress&cs=tinysrgb&w=800',
+    category: 'fullstack',
+    technologies: ['React', 'Node.js', 'Socket.io', 'MongoDB'],
+    github: 'https://github.com/martinpalle/taskmgr',
+    live: 'https://demo.martinpalle.dev/tasks',
+    featured: false,
+  },
+  {
+    id: 10,
+    title: 'AI Content Generator',
+    description: 'AI-powered tool for generating marketing copy, social posts, and blog content.',
+    image: 'https://images.pexels.com/photos/6207585/pexels-photo-6207585.jpeg?auto=compress&cs=tinysrgb&w=800',
+    category: 'aiml',
+    technologies: ['Python', 'GPT API', 'React', 'FastAPI'],
+    github: 'https://github.com/martinpalle/ai-content',
+    live: 'https://demo.martinpalle.dev/content',
+    featured: false,
+  },
+];
+
+export const creativePortfolio = [
+  {
+    id: 1,
+    title: 'Tech Conference Branding',
+    category: 'design',
+    image: 'https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=600',
+    description: 'Complete brand identity for annual tech conference.',
+  },
+  {
+    id: 2,
+    title: 'Corporate Event Coverage',
+    category: 'photography',
+    image: 'https://images.pexels.com/photos/1540406/pexels-photo-1540406.jpeg?auto=compress&cs=tinysrgb&w=600',
+    description: 'Professional event photography for corporate events.',
+  },
+  {
+    id: 3,
+    title: 'Product Launch Promo',
+    category: 'video',
+    image: 'https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=600',
+    description: 'Cinematic promotional video for product launch.',
+  },
+  {
+    id: 4,
+    title: 'Social Media Campaign',
+    category: 'design',
+    image: 'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=600',
+    description: 'Complete social media design campaign.',
+  },
+  {
+    id: 5,
+    title: 'Portrait Photography',
+    category: 'photography',
+    image: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600',
+    description: 'Professional portrait photography session.',
+  },
+  {
+    id: 6,
+    title: 'Motion Graphics Reel',
+    category: 'video',
+    image: 'https://images.pexels.com/photos/6065561/pexels-photo-6065561.jpeg?auto=compress&cs=tinysrgb&w=600',
+    description: 'Collection of motion graphics animations.',
+  },
+  {
+    id: 7,
+    title: 'UI/UX Case Study',
+    category: 'design',
+    image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600',
+    description: 'Mobile app design case study.',
+  },
+  {
+    id: 8,
+    title: 'Event Highlights',
+    category: 'video',
+    image: 'https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=600',
+    description: 'Dynamic event highlight video.',
+  },
+  {
+    id: 9,
+    title: 'Creative Photography',
+    category: 'photography',
+    image: 'https://images.pexels.com/photos/1693095/pexels-photo-1693095.jpeg?auto=compress&cs=tinysrgb&w=600',
+    description: 'Artistic and creative photography work.',
+  },
+];
+
+export const certifications = [
+  {
+    title: 'Data Analytics',
+    issuer: 'Forage',
+    date: '2024',
+    icon: Database,
+    category: 'Data Analytics',
+  },
+  {
+    title: 'Python Master ',
+    issuer: 'Simplilearn',
+    date: '2024',
+    icon: Code2,
+    category: 'Programming',
+  },
+  {
+    title: 'Project Management',
+    issuer: 'Simplilearn',
+    date: '2024',
+    icon: Workflow,
+    category: 'Management',
+  },
+  {
+    title: 'SQL',
+    issuer: 'Coursera',
+    date: '2024',
+    icon: Database,
+    category: 'Databases',
+  },
+];
+
+export const achievements = [
+  {
+    category: 'Technical',
+    icon: Cpu,
+    items: [
+      'Developed 20+ web applications',
+      'Built 10+ AI/ML models',
+      'Participated in 5 hackathons',
+      'Conducted 15+ technical workshops',
+    ],
+  },
+  {
+    category: 'Leadership',
+    icon: Zap,
+    items: [
+      'Led 8 event management teams',
+      'Coordinated 15+ team projects',
+      'Mentored 20+ junior developers',
+      'Organized tech community events',
+    ],
+  },
+  {
+    category: 'Creative',
+    icon: Sparkles,
+    items: [
+      'Produced 100+ design projects',
+      'Created 50+ video productions',
+      'Shot 30+ photography sessions',
+      'Built social media presence 50K+',
+    ],
+  },
+];
+
+export const testimonials = [
+  {
+    name: 'Aarav Sharma',
+    role: 'CEO, TechNexus India',
+    image: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=200',
+    content: 'Martin delivered exceptional work on our platform. His full-stack expertise and attention to detail exceeded our expectations. The AI integration he implemented transformed our user experience.',
+    rating: 5,
+  },
+  {
+    name: 'Priya Mehta',
+    role: 'Marketing Director, CreativeKonnect',
+    image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=200',
+    content: 'The video content Martin produced for our campaign was outstanding. His creative vision and technical skills in video editing brought our brand story to life in ways we never imagined.',
+    rating: 5,
+  },
+  {
+    name: 'Rohit Verma',
+    role: 'Product Head, DataGuru Labs',
+    image: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=200',
+    content: 'Working with Martin on our machine learning project was a great experience. He has a unique ability to translate complex technical concepts into practical, user-friendly solutions.',
+    rating: 5,
+  },
+  {
+    name: 'Neha Singh',
+    role: 'Founder & Creative Lead, StudioSutra',
+    image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=200',
+    content: 'Martin\'s design work for our brand identity was exceptional. He understood our vision perfectly and delivered a cohesive visual identity that perfectly represents our company.',
+    rating: 5,
+  },
+];
+
+export const navLinks = [
+  { name: 'Home', href: '#home' },
+  { name: 'About', href: '#about' },
+  { name: 'Skills', href: '#skills' },
+  { name: 'Services', href: '#services' },
+  { name: 'Experience', href: '#experience' },
+  { name: 'Projects', href: '#projects' },
+  { name: 'Portfolio', href: '#portfolio' },
+  { name: 'Contact', href: '#contact' },
+];
